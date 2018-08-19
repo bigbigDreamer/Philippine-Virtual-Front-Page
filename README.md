@@ -9,7 +9,7 @@
  + MainPages
     - index.html
     - homePage.html
- + DocumentDescribing
+ + FileDescription
     - css
       - 包含除了BootStrap默认样式的其他DIY样式文件。（En：Contains other DIY style files other than the BootStrap default style.）
     - js
