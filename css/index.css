@@ -1,0 +1,19 @@
+body {
+    background-image: url("../img/background.jpg");
+}
+
+.panel, button {
+    background-color: transparent;
+}
+
+.login-panel {
+    margin-top: 120px;
+}
+
+i {
+    color: #778899;
+}
+.tablist>a{
+    font-family:Poiret One;
+    font-size: 22px;
+}
