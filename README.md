@@ -1,6 +1,6 @@
 # Philippine-Virtual-Front-Page
  + Description
-    - 我计划和一个叫储亚波的小朋友合作，完成一个叫Virtual-club-of-red-willow的项目。他负责后台代码，我负责整个前台代码。（En：I plan to cooperate with a small friend named chuyapo to complete a project called Virtual-club-of-red-willow. He is responsible for the background code, and I am responsible for the entire front page.）
+    - 我计划和我一个叫储亚波的小伙伴合作，完成一个叫Virtual-club-of-red-willow的项目。他负责后台代码，我负责整个前台代码。（En：I plan to cooperate with a small friend named chuyapo to complete a project called Virtual-club-of-red-willow. He is responsible for the background code, and I am responsible for the entire front page.）
  + Tools
     - BootStrap@3.3.7
     - jQuery@3.2.1
