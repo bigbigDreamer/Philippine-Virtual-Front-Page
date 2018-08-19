@@ -10,7 +10,16 @@
     - index.html
     - homePage.html
  + DocumentDescribing
-    - 
+    - css
+      - 包含除了BootStrap默认样式的其他DIY样式文件。（En：Contains other DIY style files other than the BootStrap default style.）
+    - js
+      - 包含除了jQuery以外的DIY函数库，用于操作页面，使得页面动起来。（En：The DIY function library besides jQuery is included to manipulate the page and make it move.）
+    - img
+      - 包含整个网页美化图片。（En：Contains the entire page beautification picture.）
+    - Tools-Box
+      - 包含BootStrap,jQuery,Animate.css等外部依赖文件。（En：Contains the BootStrap, jQuery, the Animate. CSS external dependencies files, etc.）
+    - views 
+      - 包含所有的网页.html文件。（En：Contains all webpages. HTML files.）
  + Version
     - 1.0.0     Time 2018.8.19
       - 创建仓库并且上传了文件夹Tools-Box，内部包含我所用到的各种依赖库以及相关文件。（En：I created the warehouse and uploaded the tools-box folder, which contained the various dependent libraries and related files I used.）
