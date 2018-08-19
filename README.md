@@ -1,10 +1,6 @@
 # Philippine-Virtual-Front-Page
  + Description
-    - I plan to cooperate with a small friend name
-    d chuyapo to complete a project called p
-    lani-virtual-club. He is responsible for the ba
-    ckground code, and I am responsible for the ent
-    ire front page.
+    - 我计划和一个叫储亚波的小朋友合作，完成一个叫Virtual-club-of-red-willow的项目。他负责后台代码，我负责整个前台代码。（En：I plan to cooperate with a small friend named chuyapo to complete a project called Virtual-club-of-red-willow. He is responsible for the background code, and I am responsible for the entire front page.）
  + Tools
     - BootStrap@3.3.7
     - jQuery@3.2.1
@@ -13,6 +9,8 @@
  + MainPages
     - index.html
     - homePage.html
+ + DocumentDescribing
+    - 
  + Version
     - 1.0.0     Time 2018.8.19
       - 创建仓库并且上传了文件夹Tools-Box，内部包含我所用到的各种依赖库以及相关文件。（En：I created the warehouse and uploaded the tools-box folder, which contained the various dependent libraries and related files I used.）
