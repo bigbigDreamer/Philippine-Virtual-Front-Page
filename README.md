@@ -28,3 +28,6 @@
  + Question
     - NO.1      @Time 2018.8.19
       - 在使用FontAwesome旋转属性的时候，发现会有上下闪动的情况，在查阅了相关文档之后，发现是浏览器不兼容，尚未解决。（En：When using FontAwesome to rotate the property, it will flash up and down. After consulting relevant documents, it is found that the browser is not compatible and has not been solved.）
+ + Solution
+    - NO.1    @Time 2018.8.20
+      - 今天算是弄懂了为什么chrome浏览器上边使用animate.css的动图为什么会有抖动，后来在火狐浏览器上做了测试，我惊喜的发现完美兼容，这个问题算是告一段落。（En：Today, I figured out why animate.css animations were jittery on chrome, and when I tested them on firefox, I was surprised to find that they were perfectly compatible.）
