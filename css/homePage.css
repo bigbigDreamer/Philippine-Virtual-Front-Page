@@ -1,0 +1,61 @@
+a,img{
+    cursor: pointer;
+}
+.jumbotron{
+    background-image: url("../img/mainPageimg.jpg");
+    height: 300px;
+    background-position-y: -180px;
+    color: white;
+}
+p{
+    text-indent: 2em;
+    color: black;
+    font-weight: bolder;
+}
+h3 {
+    color: #BACAD9;
+}
+.navigation:hover h3{
+    color: black;
+}
+.navigation img:hover{
+    opacity: 0.5;
+    content: 'Go';
+}
+i,h2{
+    color: #172E64;
+}
+h4{
+    text-indent: 2em;
+    color: #5B7E9E;
+    line-height: 2em;
+}
+.person{
+    width: 800px;
+    height: 400px;
+    border-radius: 50%;
+}
+.person:hover{
+    opacity: 0.8;
+}
+.footer{
+    background-color: #D8D7D5;
+}
+.users{
+    color: #0B6DE9!important;
+}
+.github{
+    color: black;
+}
+.github:hover{
+    color: purple;
+}
+.weixin,.qq{
+    color: grey;
+}
+.weixin:hover{
+    color: #00D205;
+}
+.qq:hover{
+    color: #E81010;
+}

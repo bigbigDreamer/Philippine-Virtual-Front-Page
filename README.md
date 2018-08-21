@@ -25,6 +25,10 @@
       - 创建仓库并且上传了文件夹Tools-Box，内部包含我所用到的各种依赖库以及相关文件。（En：I created the warehouse and uploaded the tools-box folder, which contained the various dependent libraries and related files I used.）
     - V1.0.1     @Time 2018.8.19
       - 完成了登录注册页面的编写，并且完善了页面的美化以及用户交互体验。（En：Finished writing the login and registration page, and improved the page beautification and user interaction experience.）
+    - V1.0.2     @Time 2018.8.21  AM
+      - 应后端工程师需要，修改了登陆页面的用户名为学号。(En：The user name of the login page was changed as required by the back-end engineer.)
+    - V1.0.3     @Time 2018.8.21  PM
+      - 完成了mainPage页面的编码，美化并且完善了用户体验。整体采用了BootStrap固定容器以及栅格布局，完成了常规响应式页面的基本规模。(En：Complete the coding of the mainPage page, beautify and perfect the user experience. The overall adopted BootStrap fixed container and grid layout to complete the basic scale of conventional responsive pages.)
  + Question
     - NO.1      @Time 2018.8.19
       - 在使用FontAwesome旋转属性的时候，发现会有上下闪动的情况，在查阅了相关文档之后，发现是浏览器不兼容，尚未解决。（En：When using FontAwesome to rotate the property, it will flash up and down. After consulting relevant documents, it is found that the browser is not compatible and has not been solved.）
