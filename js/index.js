@@ -27,15 +27,11 @@ $(() => {
         let password = $('#password').val();
         let obj = {studentNumber,password};
         setTimeout(() => {
-            //点击登陆同时验证ajax，如果后台返回success,那么延迟八毫秒提交表单，如果返回error，那么在当前页面显示错误信息
-            $.post('/check',{obj},(data)=>{
-                if(Object.is(data,'success')){
-                    $('#Login-Form').submit();
-                }
-                else if(Object.is(data,'error')){
-                    $('#message').html('用户名或者密码错误！')
-                }
-            })
+            //获取后台session,如果为空，提交表单，不为空，显示信息
+            let msg = $('#message').html();
+            if (msg ==null||msg==""){
+                $('#Login-Form').submit();
+            }
         }, 800)
     });
     //注册面板，图标变换，预设800毫秒之后提交表单
