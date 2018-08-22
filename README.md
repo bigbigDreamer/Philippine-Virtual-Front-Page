@@ -29,6 +29,8 @@
       - 应后端工程师需要，修改了登陆页面的用户名为学号。(En：The user name of the login page was changed as required by the back-end engineer.)
     - V1.0.3     @Time 2018.8.21  PM
       - 完成了mainPage页面的编码，美化并且完善了用户体验。整体采用了BootStrap固定容器以及栅格布局，完成了常规响应式页面的基本规模。(En：Complete the coding of the mainPage page, beautify and perfect the user experience. The overall adopted BootStrap fixed container and grid layout to complete the basic scale of conventional responsive pages.)
+    - V1.0.4     @Time 2018.8.22 AM
+      - 应后端工程师的要求，简化方案，取消了登陆错误页面的计划，直接采用ajax技术，实现局部刷新的功能，具体代码，我放置在了index.js这个文件中，并且带有详细的说明。(En：At the request of the back-end engineer, the program was simplified, the plan of landing on the error page was cancelled, and the ajax technology was adopted directly to achieve the function of partial refresh. The specific code was placed in the file of index.js with detailed instructions.)
  + Question
     - NO.1      @Time 2018.8.19
       - 在使用FontAwesome旋转属性的时候，发现会有上下闪动的情况，在查阅了相关文档之后，发现是浏览器不兼容，尚未解决。（En：When using FontAwesome to rotate the property, it will flash up and down. After consulting relevant documents, it is found that the browser is not compatible and has not been solved.）
