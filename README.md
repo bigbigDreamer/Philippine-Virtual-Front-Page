@@ -33,9 +33,13 @@
       - 应后端工程师的要求，简化方案，取消了登陆错误页面的计划，直接采用ajax技术，实现局部刷新的功能，具体代码，我放置在了index.js这个文件中，并且带有详细的说明。(En：At the request of the back-end engineer, the program was simplified, the plan of landing on the error page was cancelled, and the ajax technology was adopted directly to achieve the function of partial refresh. The specific code was placed in the file of index.js with detailed instructions.)
     - V1.0.5     @Time 2018.8.22 PM
       - 取消ajax的使用，将数据放入服务器session中，前台判断session数据信息，为空提交，不为空渲染。(En：Cancel the use of ajax, put the data into the server session, the front desk judges the session data information, submit for null, not render for empty.)
+    - V1.0.6     @Time 2018.8.24 PM
+      - 完成noticePage页面的编写以及美化，主要对应主页中的首页点击相应页面。(En：NoticePage page main writing and beautification, corresponding to the home page of the home page, click on the corresponding page.)
  + Question
     - NO.1      @Time 2018.8.19
       - 在使用FontAwesome旋转属性的时候，发现会有上下闪动的情况，在查阅了相关文档之后，发现是浏览器不兼容，尚未解决。（En：When using FontAwesome to rotate the property, it will flash up and down. After consulting relevant documents, it is found that the browser is not compatible and has not been solved.）
+    - No.2      @Time 2018.8.24
+      - 在构建页面时发现自己的UI审美以及色彩审美能力较弱，正在思考如何在以后的学习中加以拓展。(En：When building the page, I found my UI aesthetics and color aesthetics are weak, and I am thinking about how to expand them in the future study.)
  + Solution
     - NO.1    @Time 2018.8.20
       - 今天算是弄懂了为什么chrome浏览器上边使用animate.css的动图为什么会有抖动，后来在火狐浏览器上做了测试，我惊喜的发现完美兼容，这个问题算是告一段落。（En：Today, I figured out why animate.css animations were jittery on chrome, and when I tested them on firefox, I was surprised to find that they were perfectly compatible.）

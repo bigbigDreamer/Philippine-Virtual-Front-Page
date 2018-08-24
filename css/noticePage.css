@@ -1,0 +1,26 @@
+body{
+    background-image: url("../img/noticeimg1.jpg");
+}
+.navbar{
+    margin-top: 10px;
+    opacity: 0.7;
+}
+.navbar-right ul li a{
+    color: white;
+}
+.navbar-brand{
+    font-size: 50px;
+    color: grey;
+    font-family:'Jokerman';
+}
+img{
+    width: 600px;
+    height: 246px;
+}
+.panel{
+    background-color: transparent;
+    color: white;
+}
+.panel-heading{
+    opacity: 0.7;
+}
