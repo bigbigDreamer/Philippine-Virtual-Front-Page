@@ -11,6 +11,33 @@
     <link rel="stylesheet" href="../Tools-Box/animate.css/animate.min.css">
     <link rel="stylesheet" href="../Tools-Box/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/noticePage.css">
+    <script>
+        informDisplay = (id)=>{//测试id是你jsp页面传过来的，遍历的时候一定传给函数，然后在span中根据显示获取就行了。
+         // alert("你点我干嘛")
+          $.post('',{id},function (data) {
+              console.log(data)
+              $("#id").append(
+                  `<span>通知内容:${data.item}</span><br><span>通知人:${data.person}</span><span>通知时间:${data.time}</span>`
+              )
+          })
+      }
+        exerciseDisplay = (id)=>{
+            $.post('',{id},function (data) {
+                console.log(data)
+                $("#id").append(
+                    `<span>练习内容:${data.item}</span><br><span>分数:${data.person}</span><span>截止日期:${data.time}</span>`
+                )
+            })
+        }
+        jobDisplay = (id)=>{
+            $.post('',{id},function (data) {
+                console.log(data)
+                $("#id").append(
+                    `<span>作业内容:${data.item}</span><br><span>通知人:${data.person}</span><span>通知时间:${data.time}</span>`
+                )
+            })
+        }
+    </script>
 </head>
 <body>
 <nav class="navbar " role="navigation">
@@ -36,10 +63,11 @@
                 </div>
                 <div class="panel-body">
                    <ul>
-                       <li>我是一条通知内容</li>
-                       <li>我是一条通知内容</li>
-                       <li>我是一条通知内容</li>
-                       <li>我是一条通知内容</li>
+                       <li><a href="javascript:informDisplay(id)" id="id">我是一条通知内容</a></li>
+                       <span>通知内容</span>
+                       <span>发布人</span>
+                       <span>时间</span>
+
                    </ul>
                 </div>
             </div>
@@ -53,9 +81,7 @@
                 </div>
                 <div class="panel-body">
                     <ul>
-                        <li>练习1</li>
-                        <li>练习2</li>
-                        <li>练习3</li>
+                         <li><a href="javascript:exerciseDisplay(id)">练习1</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,9 +95,7 @@
                 </div>
                 <div class="panel-body">
                     <ul>
-                     <li>我是作业1</li>
-                     <li>我是作业2</li>
-                     <li>我是作业3</li>
+                     <li><a href="javascript:jobDisplay(id)">我是作业1</a></li>
                     </ul>
                 </div>
             </div>
