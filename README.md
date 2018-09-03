@@ -36,7 +36,9 @@
     - V1.0.6     @Time 2018.8.24 PM
       - 完成noticePage页面的编写以及美化，主要对应主页中的首页点击相应页面。(En：NoticePage page main writing and beautification, corresponding to the home page of the home page, click on the corresponding page.)
     - V1.0.7      @Time 2018.8.31 PM
-      - 完成论坛页面的部署，整体采用Vue框架配合Elemment UI
+      - 完成论坛页面的部署，整体采用Vue框架配合Element UI
+    - V1.0.8     @Time  2018.9.3  PM
+      - 完成新一版论坛页面的构建。
  + Question
     - NO.1      @Time 2018.8.19
       - 在使用FontAwesome旋转属性的时候，发现会有上下闪动的情况，在查阅了相关文档之后，发现是浏览器不兼容，尚未解决。（En：When using FontAwesome to rotate the property, it will flash up and down. After consulting relevant documents, it is found that the browser is not compatible and has not been solved.）

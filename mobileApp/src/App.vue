@@ -1,59 +1,100 @@
 <template>
   <div>
-  <div v-show="isPlay2">
+  <el-row>
+    <el-col :span="24" class="header"><div class="grid-content">
+      <el-row>
+      <el-col :span="20" :xs="18">
+        <h2>Philippine BBS</h2>
+      </el-col>
+       <el-col :span="4" :xs="4">
+         <el-button round  @click="dialogVisible = true">发帖</el-button>
+       </el-col>
+      </el-row>
+    </div></el-col>
+  </el-row>
     <el-row>
-      <el-col :xs="20" :sm="20" :md="20">
-       <h2>欢迎来到红柳虚拟论坛</h2>
-      </el-col>
-      <el-col :xs="4" :sm="4" :md="4">
-        <el-button type="primary" class="trans" @click="jump">转到</el-button>
-      </el-col>
+      <el-dialog
+        title="发布帖子"
+        :visible.sync="dialogVisible"
+        width="30%"
+        :before-close="handleClose">
+        <el-input
+          placeholder="请输入内容"
+          v-model="input10"
+          clearable>
+        </el-input>
+        <span slot="footer" class="dialog-footer">
+    <el-button @click="dialogVisible = false">取 消</el-button>
+    <el-button type="primary" @click="dialogVisible = false">发布</el-button>
+  </span>
+      </el-dialog>
     </el-row>
-    <el-row>
-      <el-col :xs="24" :sm="24" :md="24">
-      <Publish/>
-      </el-col>
+    <el-row class="body">
+       <Panel/>
     </el-row>
-  </div>
-    <div v-show="isPlay">
-    <Panel />
-      <el-button type="primary" class="trans" @click="backFrom">转到</el-button>
-    </div>
+    <el-row class="footer">
+       <Footer/>
+    </el-row>
   </div>
 </template>
 
 <script>
-  import Publish from './components/publish'
-  import Panel from './components/Panel'
+import Panel from  './components/Panel'
+import Footer from  './components/Footer'
 export default {
   name: 'App',
-  data(){
+  data() {
     return {
-      value:'',
-      tabPosition: 'bottom',
-      isPlay:false,
-      isPlay2:true
+      dialogVisible: false,
+      input10: ''
+    };
+  },
+  methods: {
+    handleClose(done) {
+      this.$confirm('确认关闭？')
+        .then(_ => {
+          done();
+        })
+        .catch(_ => {});
     }
   },
   components:{
-    Publish,
-    Panel
-  },
-  methods:{
-    jump(){
-      this.isPlay2 = false
-      this.isPlay = true
-    }
-    ,backFrom(){
-      this.isPlay = false
-      this.isPlay2 = true
-    }
+    Panel,
+    Footer
   }
-}
+  }
 </script>
 
 <style>
-.trans{
-   
-}
+  .header{
+    background-color: black;
+    padding: 5px;
+  }
+  .header .grid-content h2{
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 28px;
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+  }
+  .header .grid-content .el-button{
+    margin-top: 10px;
+    background-color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+  }
+  .el-dialog{
+    background-color: black ;
+  }
+  .body{
+    background-color: #434343;
+  }
+  .footer{
+    background-color: black;
+    color: #C7C7C7;
+    padding: 20px;
+    text-align: center;
+  }
 </style>

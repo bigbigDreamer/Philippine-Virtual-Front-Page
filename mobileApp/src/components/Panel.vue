@@ -1,32 +1,54 @@
 <template>
-  <el-row>
-    <el-col :xs="24" :sm="24" :md="24">
+    <el-col :span="14" :offset="5">
       <el-card class="box-card">
-        <div v-for="(item,index) in Persons" :key="index" class="text item">
-           <span>{{item.name}}说：</span><br>
-          &nbsp;&nbsp;{{item.msg}}
+        <div slot="header" class="clearfix">
+          <span>热帖榜</span>
+        </div>
+        <div class="text item">
+          <ul>
+            <li v-for="index in 5" :key="index" @click="handleClick" ref="li">
+              热血风云榜{{index}}
+            </li>
+          </ul>
         </div>
       </el-card>
     </el-col>
-  </el-row>
 </template>
 
 <script>
     export default {
         name: "Panel",
-      data(){
-          return {
-           Persons:[]
-          }
-      },
-      mounted(){
-          this.$pub.subscribe('persons',(msg,data)=>{
-            this.Persons = data
-          })
+      methods:{
+        handleClick(event){
+          console.log(this.$refs.li.innerText)
+        }
       }
     }
 </script>
 
-<style scoped>
+<style>
+  .text {
+    font-size: 14px;
+  }
 
+  .item {
+    margin-bottom: 18px;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+  }
+  .clearfix:after {
+    clear: both
+  }
+
+  .box-card {
+    width: 100%;
+    height: 500px;
+    background-color: #434343;
+    color: #C7C7C7;
+    border: none;
+  }
 </style>
