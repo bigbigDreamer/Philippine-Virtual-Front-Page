@@ -1,13 +1,13 @@
 <template>
-    <el-col :span="14" :offset="5">
+    <el-col :span="14" :offset="5" v-show="isShow">
       <el-card class="box-card">
         <div slot="header" class="clearfix">
           <span>热帖榜</span>
         </div>
         <div class="text item">
           <ul>
-            <li v-for="index in 5" :key="index" @click="handleClick" ref="li">
-              热血风云榜{{index}}
+            <li v-for="(item,index) in Persons" :key="index" @click="handleClick(index)" ref="li">
+              {{item.content}}
             </li>
           </ul>
         </div>
@@ -16,14 +16,32 @@
 </template>
 
 <script>
-    export default {
-        name: "Panel",
-      methods:{
-        handleClick(event){
-          console.log(this.$refs.li.innerText)
-        }
+  import Single from './Single'
+  export default {
+    name: "Panel",
+    data(){
+      return {
+        Persons:[],
+        isShow:true
       }
+    },
+    methods: {
+      handleClick(index) {
+        this.isShow = false;
+        this.$router.push({ name: 'single',params: { userId: index,content: this.$refs.li[index].innerText,topic:this.Persons[index].topic}})
+        this.$pub.publish('data',this.$refs.li[index].innerHTML)
+      }
+    },
+    mounted(){
+      this.$pub.subscribe('person',(msg,data)=>{
+        console.log(123)
+        this.Persons = data
+      })
+    },
+    components:{
+      Single
     }
+  }
 </script>
 
 <style>

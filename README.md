@@ -39,11 +39,15 @@
       - 完成论坛页面的部署，整体采用Vue框架配合Element UI
     - V1.0.8     @Time  2018.9.3  PM
       - 完成新一版论坛页面的构建。
+    - V1.0.9     @Time  2018.9.4  PM
+      - 论坛功能模拟实现全部完成。
  + Question
     - NO.1      @Time 2018.8.19
       - 在使用FontAwesome旋转属性的时候，发现会有上下闪动的情况，在查阅了相关文档之后，发现是浏览器不兼容，尚未解决。（En：When using FontAwesome to rotate the property, it will flash up and down. After consulting relevant documents, it is found that the browser is not compatible and has not been solved.）
     - No.2      @Time 2018.8.24
       - 在构建页面时发现自己的UI审美以及色彩审美能力较弱，正在思考如何在以后的学习中加以拓展。(En：When building the page, I found my UI aesthetics and color aesthetics are weak, and I am thinking about how to expand them in the future study.)
+    - No.3      @Time 2018.9.4
+      - 在使用PubSub工具库时，发现在组件页面中会失效，此问题有点严重，暂时列为重点，明天去请教老师。
  + Solution
     - NO.1    @Time 2018.8.20
       - 今天算是弄懂了为什么chrome浏览器上边使用animate.css的动图为什么会有抖动，后来在火狐浏览器上做了测试，我惊喜的发现完美兼容，这个问题算是告一段落。（En：Today, I figured out why animate.css animations were jittery on chrome, and when I tested them on firefox, I was surprised to find that they were perfectly compatible.）
